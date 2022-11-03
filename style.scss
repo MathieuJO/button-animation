@@ -1,0 +1,93 @@
+@import "mixins/mixin.scss";
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* grandit au passage souris */
+
+.contenair-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    @include cd-btn;
+    @include cd-txt;
+    border-radius: 30px;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    transform:scale(1);
+    transition-property: transform;
+    transition-duration: 1s;
+    &:hover{
+        transform: scale(1.15);
+    }
+}
+
+/*formulaire */
+
+.contenair-2 {
+    background-color: brown;
+    margin: 1rem;
+    width: 50%;
+}
+
+.form {
+    &__group {
+        & input {
+            border: 2px solid #fff;
+            border-radius:100rem;
+            @include cd-txt2;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2,5rem;
+            outline: none;
+            padding: .5rem 1.5rem;
+            width: 100%;
+            transition: background-color 500ms;
+            &:focus {
+                border: 5px solid #6300a0;
+            }
+            &:not(:focus):invalid {
+                background-color: red;
+                border: 2px solid black;
+                color:white;
+            }
+
+        }
+    }
+}
+
+
+/* bouton + balle */
+
+
+.btn2 {
+    background: yellow;
+    font-size:3rem;
+    cursor:pointer;
+    padding:1.85rem 3rem;
+    border-radius:10rem;
+    &:hover + .ball{
+        transform: scale(1.0)
+    }
+
+}
+
+.ball {
+    width: 10rem;
+    height: 10rem;
+    background: green;
+    margin-bottom:1rem;
+    border-radius:50%;
+    transform: scale(0.1);
+    transition: transform 4000ms;
+}
+
+
+
+

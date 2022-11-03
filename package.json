@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "sass": "^1.55.0"
+  },
+  "name": "button-animation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass -w style.scss:style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathieuJO/button-animation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathieuJO/button-animation/issues"
+  },
+  "homepage": "https://github.com/MathieuJO/button-animation#readme",
+  "description": ""
+}
